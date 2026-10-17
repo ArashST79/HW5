@@ -26,6 +26,27 @@ Add `-o data/january_counts.csv` to save the CSV instead of printing it. Use `py
 
 The assignment uses two different script names; this project follows Task 1's `borough_complaints.py` name.
 
+## Jupyter on your Mac
+
+Task 2 is being completed locally for self-directed learning; the assignment's EC2 setup is deferred.
+
+Create a separate Python environment and install the dependencies (one-time setup):
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+To start Jupyter from the project folder:
+
+```sh
+source .venv/bin/activate
+jupyter lab --ip=127.0.0.1
+```
+
+Open `getting_started.ipynb`. Click a code cell and press **Shift + Enter** to execute it. The kernel is the Python process that runs the cells. Keep the terminal running while using Jupyter; press **Control + C** there to stop the server when finished. The server runs locally with its default token authentication. The `.venv` directory is excluded from Git; `requirements.txt` records the installed versions.
+
 ## Planned work
 
 - Compare complaint frequency in a Jupyter notebook.
