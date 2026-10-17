@@ -49,6 +49,11 @@ Open `getting_started.ipynb`. Click a code cell and press **Shift + Enter** to e
 
 ## Planned work
 
-- Compare complaint frequency in a Jupyter notebook.
 - Precompute monthly closure-time averages.
 - Build an interactive Bokeh dashboard.
+
+## Complaint frequency analysis (Task 3)
+
+Open `complaint_analysis.ipynb` in Jupyter and run its cells from top to bottom. It calls the command-line tool for the full year and four selected months, ranks complaint types across boroughs, and compares January–February with June–July. Running all cells takes a few minutes because each tool call reads the dataset.
+
+The notebook writes `complaint_type_analysis.md` and `figures/complaint_comparison.png`. It reports both period totals and daily averages to account for unequal period lengths. The saved notebook includes executed results.
