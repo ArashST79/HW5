@@ -14,9 +14,20 @@ The script retains complaints created in 2024 with a nonmissing ZIP code and pre
 
 The prepared dataset contains 3,423,953 complaints. Data files are excluded from Git through `.gitignore`.
 
+## Complaint-counting tool
+
+Count complaints by type and borough, using an inclusive creation-date range:
+
+```sh
+python3 borough_complaints.py -i data/311_2024.csv -s 2024-01-01 -e 2024-01-31
+```
+
+Add `-o data/january_counts.csv` to save the CSV instead of printing it. Use `python3 borough_complaints.py -h` for help. Both endpoint dates include the full day. Unclosed complaints are counted. Results are sorted by complaint type and borough; a range with no matches produces only the CSV header. Invalid dates or missing required columns produce an error.
+
+The assignment uses two different script names; this project follows Task 1's `borough_complaints.py` name.
+
 ## Planned work
 
-- Build a command-line complaint-counting tool.
 - Compare complaint frequency in a Jupyter notebook.
 - Precompute monthly closure-time averages.
 - Build an interactive Bokeh dashboard.
