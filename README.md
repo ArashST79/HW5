@@ -2,6 +2,22 @@
 
 Explore complaint counts and compare monthly average complaint closure times across NYC ZIP codes.
 
+## Scope and files
+
+This self-directed learning project was run on a local Mac. **EC2 was not used:** the assignment's EC2 checkout and Jupyter-on-EC2 requirements are not completed. The GitHub repository, local notebook analysis, command-line tool, and Bokeh dashboard are implemented.
+
+- `conceptual_answers.md`: answers to all four conceptual questions.
+- `prepare_data.py`: filter the supplied archive to 2024 complaints with ZIP codes.
+- `borough_complaints.py`: complaint counts by type, borough, and creation-date range.
+- `getting_started.ipynb`: local Jupyter setup check.
+- `complaint_analysis.ipynb`: executed Task 3 analysis and chart.
+- `complaint_type_analysis.md`: Task 3 findings.
+- `preprocess_response_times.py`, `dashboard/main.py`, and `export_dashboard.py`: Task 4 source.
+- `Bokeh.tgz`: source-only dashboard archive.
+- `requirements.txt`: installed dependency versions; developed with Python 3.14.
+
+The dataset and generated interactive HTML are excluded from Git. Obtain the supplied `311_records.csv.tar` separately, install the environment below, and run the preparation commands before reproducing the analysis or dashboard.
+
 ## Data preparation
 
 Run with Python 3 from this project folder:
@@ -28,7 +44,7 @@ The assignment uses two different script names; this project follows Task 1's `b
 
 ## Jupyter on your Mac
 
-Task 2 is being completed locally for self-directed learning; the assignment's EC2 setup is deferred.
+Jupyter is set up locally for self-directed learning; the assignment's EC2 setup is omitted from this version.
 
 Create a separate Python environment and install the dependencies (one-time setup):
 
